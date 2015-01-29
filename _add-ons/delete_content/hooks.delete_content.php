@@ -1,6 +1,6 @@
 <?php 
 	
-class Hooks_delete-content extends Hooks {
+class Hooks_delete_content extends Hooks {
 
 	var $meta = array(
 		'name'       => 'Delete Content - makes it possible to delete contentfiles',
@@ -13,8 +13,8 @@ class Hooks_delete-content extends Hooks {
 	public function request__post()
 	{
 
-		if (array_get($_POST, 'delete-content')) {
-			$filename = array_get($_POST, 'delete-content');	
+		if (array_get($_POST, 'delete_content')) {
+			$filename = array_get($_POST, 'delete_content');	
 
 			// Remove subdirectory
 			$array = explode("/", $filename);

@@ -6,8 +6,8 @@ Example markup
 {{ entries:listing folder="blogs" }}
 {{ title }}
 <form action="" method="post">
-	<input type="hidden" name="delete-file" value="{{ url }}"/>					
-	<button type="submit">Delete</button>
+	<input type="hidden" name="delete_content" value="{{ url }}"/>					
+	<button type="submit">Delete entry</button>
 </form>	
 {{ /entries:listing }}	
 ```
